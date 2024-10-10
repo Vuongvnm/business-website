@@ -5,6 +5,12 @@
   --dark: #2c2d3f;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -887,8 +893,7 @@ body {
   display: inline-block;
   margin-right: 5px;
 }
-.pf-details .body-text {
-}
+
 .pf-details .body-text h3 {
   font-size: 30px;
   font-weight: 600;
@@ -936,39 +941,43 @@ body {
 	End Portfolio CSS
 ============================*/
 
-/*=========================
-	Srart service CSS
-===========================*/
+/*========================= Start service CSS ===========================*/
 .services .single-service {
   margin: 30px 0;
   position: relative;
   padding-left: 70px;
 }
+
 .services .single-service i {
   font-size: 45px;
-  color: #1a76d1;
+  color: var(--blue);
   position: absolute;
   left: 0;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+
 .services .single-service h4 {
   text-transform: capitalize;
   margin-bottom: 25px;
-  color: #2c2d3f;
+  color: var(--dark);
 }
+
 .services .single-service h4 a {
-  color: #2c2d3f;
+  color: var(--dark);
   font-size: 20px;
   font-weight: 600;
 }
+
 .services .single-service h4 a:hover {
-  color: #1a76d1;
+  color: var(--blue);
 }
+
 .services .single-service p {
   color: #868686;
 }
+
 /*-- Service Details --*/
 .services-details-img {
   margin-bottom: 50px;
@@ -978,14 +987,17 @@ body {
   width: 100%;
   margin-bottom: 30px;
 }
+
 .services-details-img h2 {
   font-weight: 600;
   font-size: 28px;
   margin-bottom: 16px;
 }
+
 .services-details-img P {
   margin-bottom: 20px;
 }
+
 .services-details-img blockquote {
   font-size: 15px;
   color: #4a6f8a;
@@ -996,6 +1008,7 @@ body {
   margin-bottom: 20px;
   color: #fff;
 }
+
 .services-details-img blockquote i {
   position: absolute;
   display: inline-block;
@@ -1003,6 +1016,7 @@ body {
   left: 38px;
   font-size: 32px;
 }
+
 .service-details-inner-left {
   background-image: url("img/signup-bg.jpg");
   background-size: cover;
@@ -1011,14 +1025,17 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .service-details-inner-left img {
   display: none;
 }
+
 .service-details-inner {
   max-width: 580px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .service-details-inner h2 {
   font-weight: 600;
   font-size: 30px;
@@ -1026,37 +1043,38 @@ body {
   border-left: 3px solid #1a76d1;
   padding-left: 15px;
 }
+
 .service-details-inner p {
   margin-bottom: 15px;
 }
+
 .service-details-inner p:last-child {
   margin-bottom: 0;
 }
-/*=========================
-	End service CSS
-===========================*/
+/*========================= End service CSS ===========================*/
 
-/*=============================
-	Start Testimonials CSS
-===============================*/
+/*============================= Start Testimonials CSS ===============================*/
 .testimonials {
-  background-image: url("img/testi-bg.jpg");
+  background-image: url("img/testimonial-banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
+
 .testimonials .section-title h2 {
-  color: #fff;
+  color: var(--white);
 }
+
+.testimonials .section-title p {
+  color: var(--white);
+}
+
 .testimonials .single-testimonial {
   text-align: left;
   position: relative;
-  background: #fff;
+  background: var(--white);
   padding: 40px 30px;
-  margin: 5px;
-  margin-bottom: 27px;
-  margin-right: 30px;
   border-radius: 5px;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -1064,10 +1082,12 @@ body {
   margin: 0;
   margin: 30px 20px;
 }
+
 .testimonials .single-testimonial:hover {
   box-shadow: 0px 10px 10px #0000001c;
   transform: translateY(-4px);
 }
+
 .testimonials .single-testimonial img {
   position: absolute;
   left: 30px;
@@ -1076,16 +1096,19 @@ body {
   width: 53px;
   border-radius: 100%;
 }
+
 .testimonials .single-testimonial p {
   color: #868686;
   font-size: 14px;
 }
+
 .testimonials .single-testimonial .name {
   margin-top: 22px;
-  color: #2c2d3f;
+  color: var(--dark);
   font-weight: 500;
   font-size: 15px;
 }
+
 .testimonials .owl-dots {
   position: absolute;
   left: 50%;
@@ -1095,15 +1118,17 @@ body {
   border-radius: 3px;
   margin: 0 0 0 -52px;
   margin-top: 49px;
-  box-sizing: ;
 }
+
 .testimonials .owl-dots .owl-dot {
   display: inline-block;
   margin-right: 10px;
 }
+
 .testimonials .owl-dots .owl-dot:last-child {
   margin: 0px;
 }
+
 .testimonials .owl-dots .owl-dot span {
   width: 10px;
   height: 10px;
@@ -1113,23 +1138,21 @@ body {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin: 0;
-  background: #fff;
+  background: var(--white);
   position: relative;
 }
+
 .testimonials .owl-dots .owl-dot span:hover {
-  background: #fff;
+  background: var(--white);
 }
+
 .testimonials .owl-dots .owl-dot.active span {
-  background: #fff;
+  background: var(--white);
   width: 20px;
 }
-/*=============================
-	End Testimonials CSS
-===============================*/
+/*============================= End Testimonials CSS ===============================*/
 
-/*==========================
-	Start Departments CSS
-============================*/
+/*========================== Start Departments CSS ============================*/
 .departments .department-tab .nav {
   margin-bottom: 30px;
   background: transform;
@@ -1137,11 +1160,12 @@ body {
   flex-direction: row;
   border-radius: 0px;
 }
+
 .departments .department-tab .nav .list-group-item {
   text-align: center;
   margin-right: 54px;
   background: transparent;
-  color: #fff;
+  color: var(--white);
   margin-top: 20px;
   border: none;
   padding: 0;
@@ -1150,51 +1174,59 @@ body {
   padding: 0 10px 20px 10px;
   border-radius: 0px;
 }
+
 .departments .department-tab .nav .list-group-item:last-child {
   margin-right: 0;
 }
+
 .departments .department-tab .nav .list-group-item i {
   font-size: 50px;
   color: #868686;
 }
+
 .departments .department-tab .nav .list-group-item:hover {
   background: transparent;
 }
+
 .departments .department-tab .nav .list-group-item.active i {
-  color: #1a76d1;
+  color: var(--blue);
 }
 
 .departments .department-tab .nav .list-group-item.active {
-  border-color: #1a76d1;
+  border-color: var(--blue);
 }
+
 .departments .department-tab .nav .list-group-item span {
   display: block;
 }
+
 .departments .department-tab .nav .list-group-item .first {
   padding-top: 20px;
   font-size: 20px;
   font-weight: 500;
   color: #868686;
 }
+
 .departments .department-tab .nav .list-group-item.active .first {
-  color: #2c2d3f;
+  color: var(--dark);
 }
+
 .departments .department-tab .nav .list-group-item .second {
   font-size: 14px;
   font-weight: 400;
   color: #868686;
   margin-top: 3px;
 }
-.departments .department-tab .tab-pane .department-left {
-}
+
 .departments .department-tab .tab-pane .department-left h3 {
-  color: #2c2d3f;
+  color: var(--dark);
   font-weight: 600;
   font-size: 26px;
   position: relative;
   padding-bottom: 15px;
   margin-bottom: 30px;
 }
+
 .departments .department-tab .tab-pane .department-left h3:before {
   position: absolute;
   content: "";
@@ -1202,155 +1234,55 @@ body {
   bottom: 0;
   height: 3px;
   width: 50px;
-  background: #2c2d3f;
+  background: var(--dark);
 }
+
 .departments .department-tab .tab-pane .department-left .p1 {
-  color: #1a76d1;
+  color: var(--blue);
   font-weight: 500;
   margin-bottom: 18px;
 }
+
 .departments .department-tab .tab-pane .department-left p {
   margin-bottom: 20px;
 }
-.departments .department-tab .tab-pane .department-left .list {
-}
+
 .departments .department-tab .tab-pane .department-left .list li {
   position: relative;
   padding-left: 30px;
   margin-bottom: 6px;
 }
+
 .departments .department-tab .tab-pane .department-left .list li:last-child {
   margin-bottom: 0px;
 }
+
 .departments .department-tab .tab-pane .department-left .list li i {
   position: absolute;
   left: 0;
   height: 15px;
   width: 15px;
   line-height: 15px;
-  color: #fff;
-  background: #1a76d1;
+  color: var(--white);
+  background: var(--blue);
   text-align: center;
   border-radius: 100%;
   font-size: 8px;
   margin-right: 20px;
   top: 4px;
 }
+
 .departments .department-tab .tab-content .tab-text h2 {
   font-size: 18px;
 }
+
 .departments .department-tab .tab-content .tab-text p {
   color: #555;
   margin-top: 10px;
 }
-/*==========================
-	End Departments CSS
-============================*/
+/*========================== End Departments CSS ============================*/
 
-/*=============================
-	Start Pricing Table CSS
-===============================*/
-.pricing-table {
-  background: #f9f9f9;
-  position: relative;
-}
-.pricing-table .single-table {
-  background: #fff;
-  border: 1px solid #ddd;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  margin: 15px 0;
-  padding: 45px 35px 30px 35px;
-}
-/* Table Head */
-.pricing-table .single-table .table-head {
-  text-align: center;
-}
-.pricing-table .single-table .icon i {
-  font-size: 65px;
-  color: #1a76d1;
-}
-.pricing-table .single-table .title {
-  font-size: 21px;
-  color: #2c2d3f;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-.pricing-table .single-table .amount {
-  font-size: 36px;
-  font-weight: 600;
-  color: #1a76d1;
-}
-.pricing-table .single-table .amount span {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 400;
-  color: #868686;
-  margin-left: 8px;
-}
-/* Table List */
-.pricing-table .single-table .table-list {
-  padding: 10px 0;
-  text-align: left;
-  margin-top: 30px;
-}
-.pricing-table .table-list li {
-  position: relative;
-  color: #666;
-  text-transform: capitalize;
-  margin-bottom: 18px;
-  padding-right: 32px;
-}
-.pricing-table .table-list li:last-child {
-  margin-bottom: 0px;
-}
-.pricing-table .table-list li.cross i {
-  background: #aaaaaa;
-}
-.pricing-table .table-list i {
-  font-size: 7px;
-  text-align: center;
-  margin-right: 10px;
-  position: absolute;
-  right: 0;
-  height: 16px;
-  width: 16px;
-  line-height: 16px;
-  text-align: center;
-  color: #fff;
-  background: #1a76d1;
-  border-radius: 100%;
-  padding-left: 1px;
-}
-
-/* Table Bottom */
-.pricing-table .table-bottom {
-  margin-top: 25px;
-}
-.pricing-table .btn {
-  padding: 12px 25px;
-  width: 100%;
-  color: #fff;
-  background: #1a76d1;
-}
-.pricing-table .btn:before {
-  background: #2c2d3f;
-}
-.pricing-table .btn:hover {
-  color: #fff;
-}
-.pricing-table .btn i {
-  font-size: 16px;
-  margin-right: 10px;
-}
-/*=============================
-	End Pricing Table CSS
-===============================*/
-
-/*========================
-	Start Clients CSS
-==========================*/
+/*======================== Start Clients CSS ==========================*/
 .clients {
   background-image: url("img/client-bg.jpg");
   background-size: cover;
@@ -1371,28 +1303,30 @@ body {
 	End Clients CSS
 ==========================*/
 
-/*====================
-	Start Team CSS
-======================*/
+/*==================== Start Team CSS ======================*/
 .team {
-  background-image: url("img/testi-bg.jpg");
+  background-image: url("img/team-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 }
+
 .team.single-page {
-  background: #fff;
+  background: var(--white);
 }
+
 .team .section-title h2 {
-  color: #fff;
+  color: var(--white);
 }
+
 .team .section-title p {
-  color: #fff;
+  color: var(--white);
 }
+
 .team .single-team {
-  background: #fff;
+  background: var(--white);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1402,17 +1336,19 @@ body {
   border-radius: 5px;
   overflow: hidden;
 }
+
 .team .t-head {
   position: relative;
   overflow: hidden;
 }
+
 .team .t-head::before {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: var(--white);
   opacity: 0;
   visibility: hidden;
   content: "";
@@ -1421,14 +1357,17 @@ body {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .team .single-team:hover .t-head::before {
   visibility: visible;
   opacity: 0.5;
 }
+
 .team .t-head img {
   width: 100%;
   position: relative;
 }
+
 .team .t-icon a {
   position: absolute;
   left: 50%;
@@ -1440,7 +1379,7 @@ body {
   visibility: hidden;
   font-weight: 400;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   border-radius: 0;
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
@@ -1457,6 +1396,7 @@ body {
   padding: 0;
   border-radius: 4px;
 }
+
 .team .single-team:hover .t-icon a {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -1464,26 +1404,30 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
 .team .t-bottom {
   text-align: center;
   position: relative;
   padding: 0 20px;
   padding: 25px 20px;
 }
+
 .team .t-bottom p {
   color: #666;
   font-size: 13px;
   display: block;
   margin-bottom: 4px;
 }
+
 .team .t-bottom h2 {
   font-size: 18px;
   text-transform: capitalize;
   font-weight: 500;
-  color: #2c2d3f;
+  color: var(--dark);
 }
+
 .team .t-bottom h2 a:hover {
-  color: #1a76d1;
+  color: var(--blue);
 }
 /*-- Doctor Details --*/
 .doctor-details-left {
@@ -1621,27 +1565,26 @@ body {
 .doctor-details-item .doctor-name .degree {
   font-size: 16px;
 }
-/*====================
-	End Team CSS
-======================*/
+/*==================== End Team CSS ======================*/
 
-/*=======================
-	Start Blog CSS
-=========================*/
+/*======================= Start Blog CSS =========================*/
 .blog {
-  background: #fff;
+  background: var(--white);
 }
+
 .blog .blog-title {
   text-align: center;
 }
+
 .blog .single-news {
-  background: #fff;
+  background: var(--white);
   position: relative;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
   box-shadow: 0px 0px 10px #00000014;
 }
+
 .blog .single-news img {
   width: 100%;
   margin: 0;
@@ -1650,19 +1593,22 @@ body {
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+
 .blog .single-news .news-head {
   position: relative;
   overflow: hidden;
 }
+
 .blog .single-news .news-content {
   text-align: left;
-  background: #fff;
+  background: var(--white);
   z-index: 99;
   position: relative;
   padding: 30px;
   left: 0;
   z-index: 0;
 }
+
 .blog .single-news .news-content:before {
   position: absolute;
   content: "";
@@ -1670,31 +1616,36 @@ body {
   bottom: 0;
   height: 2px;
   width: 0%;
-  background: #1a76d1;
+  background: var(--blue);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+
 .blog .single-news:hover .news-content:before {
   opacity: 1;
   visibility: visible;
   width: 100%;
 }
+
 .blog .single-news .news-body h2 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
   line-height: 24px;
 }
+
 .blog .single-news .news-body h2 a {
   color: #2c2d3f;
   font-weight: 500;
 }
+
 .blog .single-news .news-body h2 a:hover {
   color: #1a76d1;
 }
+
 .blog .single-news .news-content p {
   font-weight: 400;
   text-transform: capitalize;
@@ -1702,35 +1653,40 @@ body {
   letter-spacing: 0px;
   line-height: 23px;
 }
+
 .blog .single-news .news-body .date {
   display: inline-block;
   font-size: 14px;
   margin-bottom: 5px;
-  background: #1a76d1;
-  color: #fff;
+  background: var(--blue);
+  color: var(--white);
   padding: 4px 15px;
   border-radius: 3px;
   font-size: 14px;
   margin-bottom: 10px;
 }
+
 .blog.grid .single-news {
   margin-top: 30px;
 }
+
 /* Blog Sidebar */
 .main-sidebar {
-  background: #fff;
+  background: var(--blue);
   margin-top: 30px;
   background: transparent;
 }
+
 .main-sidebar .single-widget {
   margin-bottom: 30px;
   padding: 40px;
-  background: #fff;
+  background: var(--white);
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
+
 .main-sidebar .single-widget .title {
   position: relative;
   font-size: 18px;
@@ -1738,9 +1694,10 @@ body {
   text-transform: capitalize;
   margin-bottom: 30px;
   display: block;
-  background: #fff;
+  background: var(--white);
   padding-left: 12px;
 }
+
 .main-sidebar .single-widget .title::before {
   position: absolute;
   content: "";
@@ -1748,14 +1705,17 @@ body {
   bottom: -1px;
   height: 100%;
   width: 3px;
-  background: #1a76d1;
+  background: var(--blue);
 }
+
 .main-sidebar .single-widget:last-child {
   margin: 0;
 }
+
 .main-sidebar .search {
   position: relative;
 }
+
 .main-sidebar .search input {
   width: 100%;
   height: 45px;
@@ -1786,36 +1746,43 @@ body {
   text-align: center;
   border: none;
   font-size: 14px;
-  color: #fff;
+  color: var(--white);
   background: #333;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
   border-radius: 0 5px 5px 0;
 }
+
 .main-sidebar .search .button:hover {
-  background: #1a76d1;
-  color: #fff;
+  background: var(--blue);
+  color: var(--white);
 }
+
 /* Category List */
 .main-sidebar .categor-list {
   margin-top: 15px;
 }
+
 .main-sidebar .categor-list li {
   margin-bottom: 10px;
 }
+
 .main-sidebar .categor-list li:last-child {
   margin-bottom: 0px;
 }
+
 .main-sidebar .categor-list li a {
   display: inline-block;
   color: #333;
   font-size: 14px;
 }
+
 .main-sidebar .categor-list li a:hover {
-  color: #1a76d1;
+  color: var(--blue);
   padding-left: 7px;
 }
+
 .main-sidebar .categor-list li a i {
   display: inline-block;
   margin-right: 0px;
@@ -1827,11 +1794,13 @@ body {
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+
 .main-sidebar .categor-list li a:hover i {
   margin-right: 6px;
   opacity: 1;
   visibility: visible;
 }
+
 /* Recent Posts */
 .main-sidebar .single-post {
   position: relative;
@@ -1839,10 +1808,12 @@ body {
   display: inline-block;
   padding: 17px 0;
 }
+
 .main-sidebar .single-post:last-child {
   padding-bottom: 0px;
   border: none;
 }
+
 .main-sidebar .single-post .image img {
   float: left;
   width: 80px;
