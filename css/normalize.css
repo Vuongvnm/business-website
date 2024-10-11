@@ -1,14 +1,15 @@
-/* =====================================
-Template Name: 	Mediplus.
-Author Name: Naimur Rahman
-Website: http://wpthemesgrid.com/
-Description: Mediplus - Doctor HTML Template.
-Version:	1.1
-========================================*/
+:root {
+  --white: #fff;
+  --blue: #1a76d1;
+  --dark: #2c2d3f;
+}
 
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Poppins", sans-serif;
   -moz-text-size-adjust: 100%;
@@ -539,60 +540,70 @@ Preloader Area CSS
   opacity: 0.8;
   z-index: -1;
 }
+
 /* Bread Crumbs */
 .breadcrumbs {
-  background-image: url("../img/bread-bg.jpg");
+  background-image: url("../img/blockquote.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   padding: 120px 0px;
 }
+
 .breadcrumbs .bread-inner {
   z-index: 22;
   text-align: center;
 }
+
 .breadcrumbs h2 {
-  color: #fff;
+  color: var(--white);
   text-transform: capitalize;
   font-size: 38px;
   font-weight: 700;
   margin: 0;
   padding: 0;
 }
+
 .breadcrumbs .bread-list {
   display: inline-block;
   margin-top: 20px;
 }
+
 .breadcrumbs ul li {
   display: inline-block;
   position: relative;
-  color: #fff;
+  color: var(--white);
   font-size: 15px;
   font-weight: 500;
   text-transform: capitalize;
 }
+
 .breadcrumbs ul li i {
   margin: 0px 10px;
   font-size: 14px;
   font-weight: 600;
-  color: #fff;
+  color: var(--white);
 }
+
 .breadcrumbs ul li a {
-  color: #fff;
+  color: var(--white);
   font-size: 15px;
   font-weight: 500;
   text-transform: capitalize;
   margin: 0;
   padding: 0;
 }
+
 .breadcrumbs ul li a:hover {
-  color: #2c2d3f;
+  color: var(--dark);
 }
+
 .breadcrumbs ul li.active a {
-  color: #fff;
+  color: var(--white);
   display: inline-block;
 }
+
 /* Pagination CSS */
 .pagination {
   text-align: left;

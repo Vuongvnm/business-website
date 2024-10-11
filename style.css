@@ -280,14 +280,12 @@ body {
 /* Right Bar */
 .header.style2 .main-menu {
   display: inline-block;
-  float: left;
 }
 
 .header .right-bar {
   display: inline-block;
   position: relative;
   padding-top: 20px;
-  float: right;
 }
 
 .header .right-bar a {
@@ -667,7 +665,7 @@ body {
   height: 200px;
   background: var(--white);
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   border-radius: 100%;
   -webkit-animation: waves 3s ease-in-out infinite;
   animation: waves 3s ease-in-out infinite;
@@ -742,25 +740,23 @@ body {
 }
 
 .call-action .content .second {
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid var(--white);
+  color: var(--white);
   background: transparent;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 .call-action .content .second:before {
-  background: #fff;
+  background: var(--white);
 }
 .call-action .content .second:hover {
-  color: #1a76d1;
+  color: var(--blue);
   border-color: transparent;
-  background: #fff;
+  background: var(--white);
 }
 .call-action .content .second i {
   margin-left: 10px;
 }
-/*===============================
-	Start Call to action CSS
-=================================*/
+/*=============================== Start Call to action CSS =================================*/
 
 /*==========================
 	Start Portfolio CSS
@@ -1290,8 +1286,7 @@ body {
   padding: 100px 0px;
   position: relative;
 }
-.clients .single-clients {
-}
+
 .clients .single-clients img {
   width: 100%;
   cursor: pointer;
@@ -1429,6 +1424,7 @@ body {
 .team .t-bottom h2 a:hover {
   color: var(--blue);
 }
+
 /*-- Doctor Details --*/
 .doctor-details-left {
   -webkit-box-shadow: 0px 0px 10px 0px #ddd;
@@ -1436,52 +1432,63 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
+
 .doctor-details-item img {
   width: 100%;
   border-radius: 0;
 }
+
 .doctor-details-item .doctor-details-contact {
   padding: 50px;
 }
+
 .doctor-details-item .doctor-details-contact h3 {
   font-weight: 600;
   font-size: 20px;
-  color: #2c2d3f;
+  color: var(--dark);
   margin-bottom: 30px;
 }
+
 .doctor-details-item .doctor-details-contact .basic-info {
   margin: 0;
   padding: 0;
 }
+
 .doctor-details-item .doctor-details-contact .basic-info li {
   list-style-type: none;
   display: block;
   font-weight: 400;
   font-size: 15px;
-  color: #2c2d3f;
+  color: var(--dark);
   margin-bottom: 10px;
 }
+
 .doctor-details-item .doctor-details-contact .basic-info li:last-child {
   margin-bottom: 0;
 }
+
 .doctor-details-item .doctor-details-contact .basic-info li i {
   display: inline-block;
-  color: #1a76d1;
+  color: var(--blue);
   margin-right: 8px;
   font-size: 16px;
   position: relative;
   top: 1px;
 }
+
 .doctor-details-area .doctor-details-left .social {
   margin-top: 25px;
 }
+
 .doctor-details-area .doctor-details-left .social li {
   display: inline-block;
   margin-right: 10px;
 }
+
 .doctor-details-area .doctor-details-left .social li:last-child {
   margin-right: 0px;
 }
+
 .doctor-details-area .doctor-details-left .social li a {
   height: 34px;
   width: 34px;
@@ -1495,31 +1502,33 @@ body {
   color: #757575;
   font-size: 16px;
 }
+
 .doctor-details-area .doctor-details-left .social li a:hover {
-  color: #fff;
-  background: #1a76d1;
+  color: var(--white);
+  background: var(--blue);
   border-color: transparent;
 }
+
 .doctor-details-item .doctor-details-work h3 {
   font-weight: 600;
   font-size: 20px;
   color: #2c2d3f;
   margin-top: 30px;
 }
-.doctor-details-item .doctor-details-work .time-sidual {
-}
+
 .doctor-details-item .doctor-details-work .time-sidual {
   overflow: hidden;
 }
+
 .doctor-details-item .doctor-details-work .time-sidual li {
   display: block;
-  color: #2c2d3f;
+  color: var(--dark);
   width: 100%;
   margin-bottom: 10px;
 }
+
 .doctor-details-item .doctor-details-work .time-sidual li span {
   display: inline-block;
-  float: right;
 }
 .doctor-details-item .doctor-details-work .day-head .time {
   font-weight: 400;
@@ -1530,8 +1539,7 @@ body {
   padding-left: 60px;
   padding-top: 70px;
 }
-.doctor-details-item .doctor-details-biography {
-}
+
 .doctor-details-item .doctor-details-biography h3 {
   font-weight: 600;
   font-size: 24px;
@@ -1539,13 +1547,16 @@ body {
   margin-bottom: 25px;
   margin-top: 25px;
 }
+
 .doctor-details-item .doctor-details-biography p {
   margin-bottom: 0;
 }
+
 .doctor-details-item .doctor-details-biography ul {
   margin: 0;
   padding: 0;
 }
+
 .doctor-details-item .doctor-details-biography ul li {
   list-style-type: none;
   display: block;
@@ -1562,6 +1573,7 @@ body {
   font-size: 22px;
   margin: 10px 0 5px 0;
 }
+
 .doctor-details-item .doctor-name .degree {
   font-size: 16px;
 }
@@ -1891,8 +1903,7 @@ body {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
-.news-single .news-head {
-}
+
 .news-single .news-head img {
   width: 100%;
   height: 100%;
@@ -1980,9 +1991,10 @@ body {
   -moz-transform: scale(1.2);
   transform: scale(1.2);
 }
+
 /* Blockqoute */
 .news-single blockquote {
-  background-image: url("img/blockqoute-bg.jpg");
+  background-image: url("img/blockquote.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2465,25 +2477,26 @@ body {
 	End Appointment CSS
 ============================*/
 
-/*====================
-   Start Login CSS
-======================*/
+/*==================== Start Login CSS ======================*/
 .login .inner {
   box-shadow: 0px 0px 10px #00000024;
   border-radius: 5px;
   overflow: hidden;
 }
+
 .login .login-left {
-  background-image: url(img/signup-bg.jpg);
+  background-image: url(img/login.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
 }
+
 .login .login-form {
   padding: 50px 40px;
 }
+
 .login .login-form h2 {
   position: relative;
   font-size: 32px;
@@ -2495,6 +2508,7 @@ body {
   padding-bottom: 20px;
   text-align: left;
 }
+
 .login .login-form h2:before {
   position: absolute;
   content: "";
@@ -2502,8 +2516,9 @@ body {
   bottom: 0;
   height: 2px;
   width: 50px;
-  background: #1a76d1;
+  background: var(--blue);
 }
+
 .login .login-form p {
   font-size: 14px;
   color: #333;
@@ -2511,20 +2526,25 @@ body {
   text-align: left;
   margin-bottom: 50px;
 }
+
 .login .login-form p a {
   display: inline-block;
   margin-left: 5px;
-  color: #1a76d1;
+  color: var(--blue);
 }
+
 .login .login-form p a:hover {
-  color: #2c2d3f;
+  color: var(--dark);
 }
+
 .login .form {
   margin-top: 30px;
 }
+
 .login .form .form-group {
   margin-bottom: 22px;
 }
+
 .login .form .form-group input {
   width: 100%;
   height: 50px;
@@ -2536,29 +2556,35 @@ body {
   font-weight: 400;
   border-radius: 4px;
 }
+
 .login .form .form-group.login-btn {
   margin: 0;
 }
+
 .login .form button {
   border: none;
 }
+
 .login .form .btn {
   display: inline-block;
   margin-right: 10px;
-  color: #fff;
+  color: var(--white);
   line-height: 20px;
   width: 100%;
 }
+
 .login .form .btn:hover {
-  background: #1a76d1;
-  color: #fff;
+  background: var(--blue);
+  color: var(--white);
 }
+
 .login .login-form .checkbox {
   text-align: left;
   margin: 0;
   margin-top: 20px;
   display: inline-block;
 }
+
 .login .login-form .checkbox label {
   font-size: 14px;
   font-weight: 400;
@@ -2566,12 +2592,15 @@ body {
   position: relative;
   padding-left: 20px;
 }
+
 .login .login-form .checkbox label:hover {
   cursor: pointer;
 }
+
 .login .login-form .checkbox label input {
   display: none;
 }
+
 .login .login-form .checkbox label::before {
   position: absolute;
   content: "";
@@ -2579,9 +2608,10 @@ body {
   top: 5px;
   width: 15px;
   height: 15px;
-  border: 1px solid #1a76d1;
+  border: 1px solid var(--blue);
   border-radius: 100%;
 }
+
 .login .login-form .checkbox label::after {
   position: relative;
   content: "";
@@ -2597,14 +2627,16 @@ body {
   transition: all 0.4s ease;
   display: block;
   font-size: 9px;
-  background: #1a76d1;
+  background: var(--blue);
   border-radius: 100%;
 }
+
 .login .login-form .checkbox label.checked::after {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
 }
+
 .login .login-form .lost-pass {
   display: inline-block;
   margin-left: 25px;
@@ -2612,32 +2644,32 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
-.login .login-form .lost-pass:hover {
-  color: #1a76d1;
-}
-/*====================
-   End Login CSS
-======================*/
 
-/*=========================
-   Start Register CSS
-===========================*/
+.login .login-form .lost-pass:hover {
+  color: var(--blue);
+}
+/*==================== End Login CSS ======================*/
+
+/*========================= Start Register CSS ===========================*/
 .register .inner {
   box-shadow: 0px 0px 10px #00000024;
   border-radius: 5px;
   overflow: hidden;
 }
+
 .register .register-left {
-  background-image: url(img/signup-bg.jpg);
+  background-image: url(img/login.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
 }
+
 .register .register-form {
   padding: 50px 40px;
 }
+
 .register .register-form h2 {
   position: relative;
   font-size: 32px;
@@ -2649,6 +2681,7 @@ body {
   padding-bottom: 20px;
   text-align: left;
 }
+
 .register .register-form h2:before {
   position: absolute;
   content: "";
@@ -2656,8 +2689,9 @@ body {
   bottom: 0;
   height: 2px;
   width: 50px;
-  background: #1a76d1;
+  background: var(--blue);
 }
+
 .register .register-form p {
   font-size: 14px;
   color: #333;
@@ -2665,20 +2699,25 @@ body {
   text-align: left;
   margin-bottom: 50px;
 }
+
 .register .register-form p a {
   display: inline-block;
   margin-left: 5px;
-  color: #1a76d1;
+  color: var(--blue);
 }
+
 .register .register-form p a:hover {
-  color: #2c2d3f;
+  color: var(--dark);
 }
+
 .register .form {
   margin-top: 30px;
 }
+
 .register .form .form-group {
   margin-bottom: 22px;
 }
+
 .register .form .form-group input {
   width: 100%;
   height: 50px;
@@ -2694,26 +2733,31 @@ body {
 .register .form .form-group.login-btn {
   margin: 0;
 }
+
 .register .form button {
   border: none;
 }
+
 .register .form .btn {
   display: inline-block;
   margin-right: 10px;
-  color: #fff;
+  color: var(--white);
   line-height: 20px;
   width: 100%;
 }
+
 .register .form .btn:hover {
-  background: #1a76d1;
-  color: #fff;
+  background: var(--blue);
+  color: var(--white);
 }
+
 .register .register-form .checkbox {
   text-align: left;
   margin: 0;
   margin-top: 20px;
   display: inline-block;
 }
+
 .register .register-form .checkbox label {
   font-size: 14px;
   font-weight: 400;
@@ -2721,12 +2765,15 @@ body {
   position: relative;
   padding-left: 20px;
 }
+
 .register .register-form .checkbox label:hover {
   cursor: pointer;
 }
+
 .register .register-form .checkbox label input {
   display: none;
 }
+
 .register .register-form .checkbox label::before {
   position: absolute;
   content: "";
@@ -2734,9 +2781,10 @@ body {
   top: 5px;
   width: 15px;
   height: 15px;
-  border: 1px solid #1a76d1;
+  border: 1px solid var(--blue);
   border-radius: 100%;
 }
+
 .register .register-form .checkbox label::after {
   position: relative;
   content: "";
@@ -2752,51 +2800,54 @@ body {
   transition: all 0.4s ease;
   display: block;
   font-size: 9px;
-  background: #1a76d1;
+  background: var(--blue);
   border-radius: 100%;
 }
+
 .register .register-form .checkbox label.checked::after {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
 }
+
 .register .register-form .terms {
   display: inline-block;
   margin-left: 5px;
-  color: #1a76d1;
+  color: var(--blue);
 }
 .register .register-form .terms:hover {
-  color: #2c2d3f;
+  color: var(--dark);
 }
-/*=========================
-   End Register CSS
-===========================*/
+/*========================= End Register CSS ===========================*/
 
-/*=====================
-   Start Faq CSS
-=======================*/
+/*===================== Start Faq CSS =======================*/
 .faq-head h2 {
   margin-bottom: 35px;
   font-weight: 600;
   font-size: 25px;
 }
+
 .faq-wrap {
   margin-bottom: 50px;
 }
+
 .faq-wrap:last-child {
   margin-bottom: 30px;
 }
+
 .accordion {
   padding-left: 0;
   margin: 0;
   padding: 0;
 }
+
 .accordion p {
   font-size: 15px;
   display: none;
   padding: 20px 45px 15px 20px;
   margin-bottom: 0;
 }
+
 .accordion a {
   font-size: 16px;
   width: 100%;
@@ -2805,14 +2856,16 @@ body {
   font-weight: 400;
   padding: 15px 0 15px 18px;
   border-radius: 0;
-  background: #fff;
+  background: var(--white);
   color: #333;
   border: 1px solid #eee;
 }
+
 .accordion a:hover {
-  color: #fff !important;
-  background: #1a76d1 !important;
+  color: var(--white) !important;
+  background: var(--blue) !important;
 }
+
 .accordion a:after {
   position: absolute;
   right: 20px;
@@ -2822,42 +2875,45 @@ body {
   font-size: 25px;
   font-weight: 700;
 }
+
 .accordion a:hover:after {
-  color: #fff !important;
+  color: var(--white) !important;
 }
+
 .accordion li {
   position: relative;
   list-style-type: none;
   margin-bottom: 30px;
 }
+
 .accordion li:first-child {
   border-top: 0;
 }
+
 .accordion li:last-child {
   margin-bottom: 0;
 }
+
 .accordion li a.active {
-  color: #ffffff;
-  background-color: #1a76d1;
-  border: 1px solid #1a76d1;
+  color: var(--white);
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
 }
+
 .accordion li a.active:after {
   content: "-";
   font-size: 25px;
-  color: #ffffff;
+  color: var(--white);
 }
-/*=====================
-   End Faq CSS
-=======================*/
+/*===================== End Faq CSS =======================*/
 
-/*=========================
-   Start Contact Us CSS
-===========================*/
+/*========================= Start Contact Us CSS ===========================*/
 .contact-us .inner {
   box-shadow: 0px 0px 10px #00000024;
   border-radius: 5px;
   overflow: hidden;
 }
+
 .contact-us #myMap,
 .contact-us #myMap iframe {
   height: 100%;
@@ -2868,9 +2924,11 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .contact-us .contact-us-form {
   padding: 50px 40px;
 }
+
 .contact-us .contact-us-form h2 {
   position: relative;
   font-size: 32px;
@@ -2882,6 +2940,7 @@ body {
   padding-bottom: 20px;
   text-align: left;
 }
+
 .contact-us .contact-us-form h2:before {
   position: absolute;
   content: "";
@@ -2889,8 +2948,9 @@ body {
   bottom: 0;
   height: 2px;
   width: 50px;
-  background: #1a76d1;
+  background: var(--blue);
 }
+
 .contact-us .contact-us-form p {
   font-size: 14px;
   color: #333;
@@ -2898,12 +2958,15 @@ body {
   text-align: left;
   margin-bottom: 50px;
 }
+
 .contact-us .form {
   margin-top: 30px;
 }
+
 .contact-us .form .form-group {
   margin-bottom: 22px;
 }
+
 .contact-us .form .form-group input {
   width: 100%;
   height: 50px;
@@ -2927,29 +2990,35 @@ body {
   font-weight: 400;
   border-radius: 4px;
 }
+
 .contact-us .form .form-group.login-btn {
   margin: 0;
 }
+
 .contact-us .form button {
   border: none;
 }
+
 .contact-us .form .btn {
   display: inline-block;
   margin-right: 10px;
-  color: #fff;
+  color: var(--white);
   line-height: 20px;
   width: 100%;
 }
+
 .contact-us .form .btn:hover {
-  background: #1a76d1;
-  color: #fff;
+  background: var(--blue);
+  color: var(--white);
 }
+
 .contact-us .contact-us-form .checkbox {
   text-align: left;
   margin: 0;
   margin-top: 20px;
   display: inline-block;
 }
+
 .contact-us .contact-us-form .checkbox label {
   font-size: 14px;
   font-weight: 400;
@@ -2957,12 +3026,15 @@ body {
   position: relative;
   padding-left: 20px;
 }
+
 .contact-us .contact-us-form .checkbox label:hover {
   cursor: pointer;
 }
+
 .contact-us .contact-us-form .checkbox label input {
   display: none;
 }
+
 .contact-us .contact-us-form .checkbox label::before {
   position: absolute;
   content: "";
@@ -2970,9 +3042,10 @@ body {
   top: 5px;
   width: 15px;
   height: 15px;
-  border: 1px solid #1a76d1;
+  border: 1px solid var(--blue);
   border-radius: 100%;
 }
+
 .contact-us .contact-us-form .checkbox label::after {
   position: relative;
   content: "";
@@ -2988,19 +3061,22 @@ body {
   transition: all 0.4s ease;
   display: block;
   font-size: 9px;
-  background: #1a76d1;
+  background: var(--blue);
   border-radius: 100%;
 }
+
 .contact-us .contact-us-form .checkbox label.checked::after {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
 }
+
 .contact-us .contact-info {
   margin-top: 50px;
 }
+
 .contact-us .single-info {
-  background: #1a76d1;
+  background: var(--blue);
   padding: 40px 60px;
   height: 150px;
   border-radius: 10px;
@@ -3011,6 +3087,7 @@ body {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
+
 .contact-us .single-info:before {
   position: absolute;
   z-index: -1;
@@ -3021,7 +3098,7 @@ body {
   margin: 0 auto;
   width: 80%;
   height: 90%;
-  background: #1a76d1;
+  background: var(--blue);
   opacity: 0;
   filter: blur(10px);
   -webkit-transition: all 0.3s ease-out 0s;
@@ -3030,56 +3107,64 @@ body {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
+
 .contact-us .single-info:hover:before {
   opacity: 0.8;
 }
+
 .contact-us .single-info:hover {
   transform: translateY(-5px);
 }
+
 .contact-us .single-info i {
   font-size: 42px;
-  color: #fff;
+  color: var(--white);
   position: absolute;
   left: 40px;
 }
+
 .contact-us .single-info .content {
   margin-left: 45px;
 }
+
 .contact-us .single-info .content h3 {
-  color: #fff;
+  color: var(--white);
   font-size: 18px;
   font-weight: 600;
 }
+
 .contact-us .single-info .content p {
-  color: #fff;
+  color: var(--white);
   margin-top: 5px;
 }
+
 /* Google Map */
 .contact-us #myMap {
   height: 100%;
   width: 100%;
 }
-/*=========================
-   End Contact Us CSS
-===========================*/
+/*========================= End Contact Us CSS ===========================*/
 
 /*========================
 	Start Error 404 CSS
 ==========================*/
 .error-page {
   text-align: center;
-  background: #fff;
+  background: var(--white);
   border-top: 1px solid #eee;
 }
+
 .error-page .error-inner {
   display: inline-block;
 }
+
 .error-page .error-inner h1 {
   font-size: 140px;
   text-shadow: 3px 5px 2px #3333;
-  color: #1a76d1;
+  color: var(--blue);
   font-weight: 700;
 }
+
 .error-page .error-inner h1 span {
   display: block;
   font-size: 25px;
@@ -3090,10 +3175,12 @@ body {
 .error-page .error-inner p {
   padding: 20px 15px;
 }
+
 .error-page .search-form {
   width: 100%;
   position: relative;
 }
+
 .error-page .search-form input {
   width: 400px;
   height: 50px;
@@ -3110,120 +3197,22 @@ body {
 .error-page .search-form input:hover {
   padding-left: 35px;
 }
+
 .error-page .search-form .btn {
   width: 80px;
   height: 50px;
   border-radius: 5px;
   cursor: pointer;
-  background: #1a76d1;
+  background: var(--blue);
   display: inline-block;
   position: relative;
   top: -2px;
 }
+
 .error-page .search-form .btn i {
   font-size: 16px;
 }
-/*========================
-	End Error 404 CSS
-==========================*/
-
-/*===========================
-	Start Mail Success CSS
-=============================*/
-.mail-seccess {
-  text-align: center;
-  background: #fff;
-  border-top: 1px solid #eee;
-}
-.mail-seccess .success-inner {
-  display: inline-block;
-}
-.mail-seccess .success-inner h1 {
-  font-size: 100px;
-  text-shadow: 3px 5px 2px #3333;
-  color: #1a76d1;
-  font-weight: 700;
-}
-.mail-seccess .success-inner h1 span {
-  display: block;
-  font-size: 25px;
-  color: #333;
-  font-weight: 600;
-  text-shadow: none;
-  margin-top: 20px;
-}
-.mail-seccess .success-inner p {
-  padding: 20px 15px;
-}
-.mail-seccess .success-inner .btn {
-  color: #fff;
-  background: #1a76d1;
-}
-/*===========================
-	End Mail Success CSS
-=============================*/
-
-/*=========================
-	Start Newsletter CSS
-===========================*/
-.newsletter {
-  background: #edf2ff;
-}
-.newsletter .subscribe-text {
-}
-.newsletter .subscribe-text h6 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  color: #2c2d3f;
-}
-.newsletter .subscribe-text p {
-}
-.newsletter .subscribe-form {
-  position: relative;
-}
-.newsletter .common-input {
-  height: 60px;
-  width: 300px;
-  border: none;
-  color: #333;
-  box-shadow: none;
-  text-shadow: none;
-  border-radius: 5px;
-  padding: 0px 25px;
-  font-weight: 500;
-  font-size: 14px;
-  background: #fff;
-  font-weight: 400;
-  border: 1px solid transparent;
-}
-
-.newsletter .btn {
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  display: inline-block;
-  height: 60px;
-  line-height: 60px;
-  padding: 0;
-  width: 180px;
-  position: relative;
-  top: -2px;
-  border-radius: 5px;
-  margin-left: 10px;
-  font-size: 13px;
-  font-weight: 500;
-  box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
-  background: #1a76d1;
-}
-.newsletter .btn:before {
-  border-radius: 5px;
-}
-.newsletter .button:hover {
-  box-shadow: none;
-}
-/*=========================
-	End Newsletter CSS
-===========================*/
+/*======================== End Error 404 CSS ==========================*/
 
 /*===============================
 	Start Doctor Calendar CSS
@@ -3321,57 +3310,64 @@ body {
 	End Doctor Calendar CSS
 =================================*/
 
-/*=========================
-	Start About Us CSS
-===========================*/
+/*========================= Start About Us CSS ===========================*/
 .about-area {
   position: relative;
   z-index: 1;
 }
+
 .about-image {
   width: 100%;
   height: 100%;
-  background-image: url(img/about-img.jpg);
+  background-image: url(img/about1.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .about-image img {
   display: none;
 }
+
 .about-content {
   max-width: 555px;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 50px;
 }
+
 .about-content span {
   display: block;
   margin-bottom: 5px;
-  color: #1a76d1;
+  color: var(--blue);
   font-size: 17px;
 }
+
 .about-content h2 {
   margin-bottom: 0;
   line-height: 1.3;
   font-size: 40px;
   font-weight: 600;
 }
+
 .about-content p {
   margin-top: 10px;
   margin-bottom: 0;
 }
+
 .about-content ul {
   padding-left: 0;
   list-style-type: none;
   margin-top: 25px;
   margin-bottom: 0;
 }
+
 .about-content ul li {
   margin-bottom: 16px;
   position: relative;
   padding-left: 34px;
 }
+
 .about-content ul li i {
   width: 25px;
   height: 25px;
@@ -3379,7 +3375,7 @@ body {
   text-align: center;
   border-radius: 100%;
   background-color: #1a76d12b;
-  color: #1a76d1;
+  color: var(--blue);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   display: inline-block;
@@ -3388,25 +3384,30 @@ body {
   left: 0;
   top: -2px;
 }
+
 .about-content ul li:hover i {
-  background-color: #1a76d1;
-  color: #ffffff;
+  background-color: var(--blue);
+  color: var(--blue);
 }
+
 .about-content ul li:last-child {
   margin-bottom: 0;
 }
+
 .about-content .btn {
   margin-top: 30px;
 }
+
 /* Start Our Vision Area CSS */
 .our-vision-area {
   position: relative;
   z-index: 1;
   padding-bottom: 70px;
 }
+
 .single-vision-box {
   margin-bottom: 30px;
-  background-color: #ffffff;
+  background-color: var(--white);
   -webkit-box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
   box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
   padding: 25px 20px;
@@ -3416,6 +3417,7 @@ body {
   transition: 0.5s;
   overflow: hidden;
 }
+
 .single-vision-box .icon {
   margin-bottom: 20px;
   text-align: center;
@@ -3423,12 +3425,13 @@ body {
   height: 60px;
   line-height: 60px;
   border-radius: 100%;
-  background-color: #1a76d1;
-  color: #ffffff;
+  background-color: var(--blue);
+  color: var(--white);
   font-size: 25px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .single-vision-box h3 {
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -3437,12 +3440,14 @@ body {
   font-size: 20px;
   font-weight: 700;
 }
+
 .single-vision-box p {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-top: 12px;
   margin-bottom: 0;
 }
+
 .single-vision-box::before {
   width: 0;
   height: 100%;
@@ -3451,16 +3456,17 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #1a76d1;
+  background-color: var(--blue);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .single-vision-box::after {
   content: "";
   position: absolute;
   width: 100px;
   height: 100px;
-  border: 10px solid #ffffff;
+  border: 10px solid var(--white);
   left: -80px;
   bottom: -80px;
   border-radius: 50%;
@@ -3469,23 +3475,29 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .single-vision-box:hover {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
 }
+
 .single-vision-box:hover::before {
   width: 100%;
 }
+
 .single-vision-box:hover .icon {
-  background-color: #fff;
-  color: #1a76d1;
+  background-color: var(--white);
+  color: var(--blue);
 }
+
 .single-vision-box:hover h3 {
-  color: #ffffff;
+  color: var(--white);
 }
+
 .single-vision-box:hover p {
-  color: #ffffff;
+  color: var(--white);
 }
+
 .single-vision-box:hover::after {
   left: -50px;
   bottom: -50px;
@@ -3497,17 +3509,20 @@ body {
   position: relative;
   z-index: 1;
 }
+
 .our-mission-image {
   width: 100%;
   height: 100%;
-  background-image: url(img/mission-img.jpg);
+  background-image: url(img/about2.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .our-mission-image img {
   display: none;
 }
+
 .our-mission-content {
   max-width: 555px;
   margin-left: auto;
@@ -3515,22 +3530,26 @@ body {
   padding-bottom: 60px;
   padding-right: 50px;
 }
+
 .our-mission-content .sub-title {
   display: block;
   margin-bottom: 5px;
-  color: #1a76d1;
+  color: var(--blue);
   font-size: 17px;
 }
+
 .our-mission-content h2 {
   margin-bottom: 0;
   line-height: 1.3;
   font-size: 40px;
   font-weight: 600;
 }
+
 .our-mission-content p {
   margin-top: 10px;
   margin-bottom: 0;
 }
+
 .our-mission-content ul {
   display: -ms-flexbox;
   display: -webkit-box;
@@ -3544,6 +3563,7 @@ body {
   margin-bottom: 0;
   margin-top: 0;
 }
+
 .our-mission-content ul li {
   -ms-flex: 0 0 50%;
   -webkit-box-flex: 0;
@@ -3556,6 +3576,7 @@ body {
   padding-right: 15px;
   padding-top: 25px;
 }
+
 .our-mission-content ul li .icon {
   margin-bottom: 13px;
   -webkit-box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.3);
@@ -3565,11 +3586,12 @@ body {
   line-height: 50px;
   text-align: center;
   border-radius: 50%;
-  color: #1a76d1;
+  color: var(--blue);
   font-size: 20px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .our-mission-content ul li span {
   display: block;
   color: #121521;
@@ -3578,29 +3600,28 @@ body {
   font-weight: 600;
   font-size: 17px;
 }
+
 .our-mission-content ul li:hover .icon {
-  background-color: #1a76d1;
-  color: #ffffff;
+  background-color: var(--blue);
+  color: var(--white);
   border-radius: 100%;
 }
 /* End Our Mission CSS */
 
-/*=========================
-	End About Us CSS
-===========================*/
+/*========================= End About Us CSS ===========================*/
 
-/*=========================
-	Start Footer CSS
-===========================*/
+/*========================= Start Footer CSS ===========================*/
 .footer {
   position: relative;
 }
+
 .footer .footer-top {
   padding: 100px 0px;
   position: relative;
-  background: #1a76d1;
+  background: var(--blue);
   z-index: 2;
 }
+
 .footer .footer-top:before {
   position: absolute;
   content: "";
@@ -3612,62 +3633,69 @@ body {
   opacity: 0.1;
   z-index: -1;
 }
-.footer .single-footer {
-}
+
 .footer .single-footer .social {
   margin-top: 25px;
 }
+
 .footer .single-footer .social li {
   display: inline-block;
   margin-right: 10px;
 }
+
 .footer .single-footer .social li:last-child {
   margin-right: 0px;
 }
+
 .footer .single-footer .social li a {
   height: 34px;
   width: 34px;
   line-height: 34px;
   text-align: center;
-  border: 1px solid #fff;
+  border: 1px solid var(--white);
   text-align: center;
   padding: 0;
   border-radius: 100%;
   display: block;
-  color: #fff;
+  color: var(--white);
   font-size: 16px;
 }
+
 .footer .single-footer .social li a:hover {
-  color: #1a76d1;
-  background: #fff;
+  color: var(--blue);
+  background: var(--white);
   border-color: transparent;
 }
-.footer .single-footer .social li a i {
-}
+
 .footer .single-footer.f-link li a i {
   margin-right: 10px;
 }
+
 .footer .single-footer.f-link li {
   display: block;
   margin-bottom: 12px;
 }
+
 .footer .single-footer.f-link li:last-child {
   margin: 0;
 }
+
 .footer .single-footer.f-link li a {
   display: block;
-  color: #fff;
+  color: var(--white);
   text-transform: capitalize;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
   font-weight: 400;
 }
+
 .footer .single-footer.f-link li a:hover {
   padding-left: 8px;
 }
+
 .footer .single-footer h2 {
-  color: #fff;
+  color: var(--white);
   font-size: 20px;
   font-weight: 600;
   text-transform: capitalize;
@@ -3676,6 +3704,7 @@ body {
   text-transform: capitalize;
   position: relative;
 }
+
 .footer .single-footer h2::before {
   position: absolute;
   content: "";
@@ -3683,24 +3712,28 @@ body {
   bottom: 0px;
   height: 3px;
   width: 50px;
-  background: #fff;
+  background: var(--white);
 }
+
 .footer .single-footer .time-sidual {
   margin-top: 15px;
 }
+
 .footer .single-footer .time-sidual {
   overflow: hidden;
 }
+
 .footer .single-footer .time-sidual li {
   display: block;
-  color: #fff;
+  color: var(--white);
   width: 100%;
   margin-bottom: 5px;
 }
+
 .footer .single-footer .time-sidual li span {
   display: inline-block;
-  float: right;
 }
+
 .footer .single-footer .day-head .time {
   font-weight: 400;
   float: right;
@@ -3712,18 +3745,18 @@ body {
   margin-top: 20px;
   position: relative;
 }
+
 .footer .single-footer .newsletter-inner input {
   background: transparent;
-  border: 1px solid #fff !important;
+  border: 1px solid var(--white) !important;
   height: 50px;
   line-height: 42px;
   width: 100%;
   margin-right: 15px;
-  color: #fff;
+  color: var(--white);
   padding-left: 18px;
   padding-right: 70px;
   display: inline-block;
-  float: left;
   border-radius: 0px;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -3733,27 +3766,31 @@ body {
   box-shadow: none;
   outline: none;
 }
+
 .footer .single-footer .newsletter-inner input:hover {
   padding-left: 22px;
 }
+
 .footer input::-webkit-input-placeholder {
   opacity: 1;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 .footer input::-moz-placeholder {
   opacity: 1;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 .footer input::-ms-input-placeholder {
   opacity: 1;
-  color: #fff !important;
+  color: var(--white) !important;
 }
+
 .footer input::input-placeholder {
   opacity: 1;
-  color: #fff !important;
+  color: var(--white) !important;
 }
+
 .footer .single-footer .newsletter-inner .button {
   position: absolute;
   right: 0;
@@ -3761,8 +3798,8 @@ body {
   height: 50px;
   line-height: 50px;
   width: 50px;
-  background: #fff;
-  border-left: 1px solid #fff;
+  background: var(--white);
+  border-left: 1px solid var(--white);
   text-shadow: none;
   box-shadow: none;
   display: inline-block;
@@ -3772,34 +3809,38 @@ body {
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
   border-radius: 0 5px 5px 0;
-  color: #1a76d1;
+  color: var(--blue);
   font-size: 25px;
 }
+
 .footer .single-footer .newsletter-inner .button i {
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+
 .footer .single-footer .newsletter-inner .button:hover i {
-  color: #2c2d3f;
+  color: var(--dark);
 }
+
 .footer .copyright {
-  background: #1a76d1;
+  background: var(--blue);
   padding: 25px 0px 25px 0px;
   text-align: center;
 }
+
 .footer .copyright .copyright-content p {
-  color: #fff;
+  color: var(--white);
 }
+
 .footer .copyright .copyright-content p a {
-  color: #fff;
+  color: var(--white);
   font-weight: 400;
   display: inline-block;
   margin-left: 4px;
 }
-/*=========================
-	End Footer CSS
-===========================*/
+
+/*========================= End Footer CSS ===========================*/
 
 /*=========================
 	Start RTL Version CSS
