@@ -34,35 +34,13 @@
     <link rel="stylesheet" href="css/animate.min.css" />
     <!-- Magnific Popup CSS -->
     <link rel="stylesheet" href="css/magnific-popup.css" />
-
-    <!-- Mediplus CSS -->
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-
-    <!-- Color CSS -->
-    <link rel="stylesheet" href="css/color/color1.css" />
-
-    <link rel="stylesheet" id="colors" />
   </head>
   <body>
     <!-- Preloader -->
-    <div class="preloader">
-      <div class="loader">
-        <div class="loader-outter"></div>
-        <div class="loader-inner"></div>
-
-        <div class="indicator">
-          <svg width="16px" height="12px">
-            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-            <polyline
-              id="front"
-              points="1 6 4 6 6 11 10 1 12 6 15 6"
-            ></polyline>
-          </svg>
-        </div>
-      </div>
-    </div>
+    <div id="preloader"></div>
     <!-- End Preloader -->
 
     <!-- Header Area -->
@@ -74,7 +52,9 @@
               <div class="col-lg-3 col-md-3 col-12">
                 <!-- Start Logo -->
                 <div class="logo">
-                  <a href="index.html" style="font-size: 32px">KALZEN</a>
+                  <a href="index.html"
+                    ><img style="width: 90px" src="img/logo.png" alt="Logo"
+                  /></a>
                 </div>
                 <!-- End Logo -->
                 <!-- Mobile Nav -->
@@ -87,15 +67,7 @@
                   <nav class="navigation">
                     <ul class="nav menu">
                       <li class="active">
-                        <a href="index.html"
-                          >Home <i class="icofont-rounded-down"></i
-                        ></a>
-                        <ul class="dropdown">
-                          <li class="active">
-                            <a href="index.html">Home Page 1</a>
-                          </li>
-                          <li><a href="index2.html">Home Page 2</a></li>
-                        </ul>
+                        <a href="index.html">Home </a>
                       </li>
                       <li>
                         <a href="staffs.html"
@@ -622,14 +594,19 @@
     </footer>
     <!--/ End Footer Area -->
 
+    <script>
+      /* Preloader JS*/
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
     <!-- jquery Min JS -->
     <script src="js/jquery.min.js"></script>
     <!-- jquery Migrate JS -->
     <script src="js/jquery-migrate.js"></script>
     <!-- Easing JS -->
     <script src="js/easing.js"></script>
-    <!-- Color JS -->
-    <script src="js/colors.js"></script>
     <!-- Popper JS -->
     <script src="js/popper.min.js"></script>
     <!-- Bootstrap JS -->

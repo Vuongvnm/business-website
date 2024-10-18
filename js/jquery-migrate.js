@@ -1,4 +1,3 @@
-/*! jQuery Migrate v3.3.2 | (c) OpenJS Foundation and other contributors | jquery.org/license */
 "undefined" == typeof jQuery.migrateMute && (jQuery.migrateMute = !0),
   (function (t) {
     "use strict";
@@ -30,19 +29,6 @@
         })(s.fn.jquery, e)
       );
     }
-    // (s.migrateVersion = "3.3.2"),
-    //   n.console &&
-    //     n.console.log &&
-    //     ((s && e("3.0.0")) ||
-    //       n.console.log("JQMIGRATE: jQuery 3.0.0+ REQUIRED"),
-    //     s.migrateWarnings &&
-    //       n.console.log("JQMIGRATE: Migrate plugin loaded multiple times"),
-    //     n.console.log(
-    //       "JQMIGRATE: Migrate is installed" +
-    //         (s.migrateMute ? "" : " with logging active") +
-    //         ", version " +
-    //         s.migrateVersion
-    //     ));
     var r = {};
     function u(e) {
       var t = n.console;
